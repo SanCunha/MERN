@@ -12,14 +12,14 @@ const App = () => {
                             <fieldset>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="formGridName">
-                                        <Form.Label>Name</Form.Label>
+                                        <Form.Label>Name:</Form.Label>
                                         <Form.Control type="text" placeholder="Enter Name" />
                                     </Form.Group>
                                 </Form.Row>
                                 <Form.Row>
                                     <Form.Group as={Col} controlId="formGridName">
-                                        <Form.Label>Age</Form.Label>
-                                        <Form.Control type="text" placeholder="Enter your Age" />
+                                        <Form.Label>Age:</Form.Label>
+                                        <Form.Control type="text" placeholder="Enter Age" />
                                     </Form.Group>
                                     <Form.Group as={Col} controlId="formGridBrave">
                                         <Form.Label>Are you brave?</Form.Label>
@@ -41,7 +41,153 @@ const App = () => {
                                     <tbody>
                                         <tr>
                                             <td></td>
+                                            <td className="leftTable">
+                                                <div>
+                                                    <label>1</label>
+                                                </div>
+                                                <div>
+                                                    <label>2</label>
+                                                </div>
+                                                <div>
+                                                    <label>3</label>
+                                                </div>
+                                                <div>
+                                                    <label>4</label>
+                                                </div>
+                                                <div>
+                                                    <label>5</label>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Beer</td>
+                                            <td className="leftTable">
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Barbecue</td>
+                                            <td className="leftTable">
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Tea</td>
+                                            <td className="leftTable">
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </Table>
+                            </fieldset>
+                        </Form.Row>
+                        <Button variant="primary" type="submit">
+                            Insert
+                        </Button>
+                    </Form>
+                </Col>
+                <Col className="col-border">
+                    <Form>
+                        <Form.Row>
+                            <fieldset>
+                                <Form.Row>
+                                    <Form.Group as={Col} controlId="formGridName">
+                                        <Form.Label>Name</Form.Label>
+                                        <Form.Control type="text" placeholder="Empty for all" />
+                                    </Form.Group>
+                                </Form.Row>
+                                <Form.Row>
+                                    <Form.Group as={Col} controlId="formGridName">
+                                        <Form.Label>Age</Form.Label>
+                                        <div className="itens-inline">
+                                            <div style={{fontSize: 'small'}}>
+                                                <div className="itens-inline">
+                                                    <Form.Label>Over</Form.Label>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>
+                                                <div className="itens-inline">
+                                                    <Form.Label>Under</Form.Label>
+                                                    <Form.Check type="radio" aria-label="radio 1" />
+                                                </div>                                                
+                                            </div>
+                                            <div>
+                                                <Form.Control type="text" placeholder="Empty for all" />
+                                            </div>
+                                        </div>
+                                    </Form.Group>
+                                    <Form.Group as={Col} controlId="formGridBrave" style={{paddingLeft: 5 + 'px !important'}}>
+                                        <Form.Label>Would you like a brave?</Form.Label>
+                                        <div className="itens-inline">
+                                            <div>
+                                                <Form.Check type="radio" aria-label="radio 1" />
+                                                <Form.Label>Yes</Form.Label>
+                                            </div>
+                                            <div>
+                                                <Form.Check type="radio" aria-label="radio 1" />
+                                                <Form.Label>No</Form.Label>
+                                            </div>
+                                            <div>
+                                                <Form.Check type="radio" aria-label="radio 1" />
+                                                <Form.Label>Whatever</Form.Label>
+                                            </div>
+                                        </div>
+                                    </Form.Group>
+                                </Form.Row>
+                            </fieldset>
+                        </Form.Row>
+                        <Form.Row>
+                            <fieldset>
+                                <legend>
+                                    How much do you like to:
+                                </legend>
+                                <Table striped bordered hover>
+                                    <tbody>
+                                        <tr>
+                                            <td></td>
                                             <td className="rightTable">
+                                                <label>0</label>
                                                 <label>1</label>
                                                 <label>2</label>
                                                 <label>3</label>
@@ -52,31 +198,25 @@ const App = () => {
                                         <tr>
                                             <td>Beer</td>
                                             <td className="rightTable">
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
+                                                <Form.Group controlId="formBasicRange">
+                                                    <Form.Control type="range" min="0" max="5"/>
+                                                </Form.Group>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Barbecue</td>
                                             <td className="rightTable">
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
+                                                <Form.Group controlId="formBasicRange">
+                                                    <Form.Control type="range" min="0" max="5"/>
+                                                </Form.Group>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td>Tea</td>
                                             <td className="rightTable">
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
-                                                <Form.Check type="radio" aria-label="radio 1" />
+                                                <Form.Group controlId="formBasicRange">
+                                                    <Form.Control type="range" min="0" max="5"/>
+                                                </Form.Group>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -84,11 +224,10 @@ const App = () => {
                             </fieldset>
                         </Form.Row>
                         <Button variant="primary" type="submit">
-                            Submit
+                            Search
                         </Button>
                     </Form>
                 </Col>
-                <Col className="col-border">2 of 2</Col>
             </Row>
             <Row>
                 <Col className="col-border">1 of 1</Col>

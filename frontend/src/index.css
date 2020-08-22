@@ -11,6 +11,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+label {
+    margin-bottom: 0px !important;
+}
+
 form {
     width: 100%;
     display: flex;
@@ -33,6 +37,11 @@ legend {
     margin-left: 0px !important;
 }
 
+.form-group {
+    width: 100%;
+    margin-bottom: 0px !important;
+}
+
 .form-row {
     margin-right: 0px !important;
     margin-left: 0px !important;
@@ -40,6 +49,18 @@ legend {
 .form-row>.col{
     padding-right: 0px !important;
     padding-left: 0px !important;
+}
+
+.form-check {
+    display: flex !important;
+    padding-left: 0px !important;
+    justify-content: center;
+}
+
+.form-check-input {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    margin-left: 0px !important;
 }
 
 .col {
@@ -54,8 +75,24 @@ legend {
     border-radius: 8px;
 }
 
+.table-bordered td {
+    border: none !important;
+}
+
 .rightTable {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.leftTable {
+    display: flex;
+    align-items: center;
     justify-content: space-around;
+}
+
+.itens-inline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
