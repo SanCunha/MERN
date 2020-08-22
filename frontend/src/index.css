@@ -1,3 +1,61 @@
-h1 {
-    color: red;
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    width: 100%;
+}
+
+legend {
+    font-size: medium !important;
+}
+.container {
+    padding: 0px !important;
+}
+
+.row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+
+.form-row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+}
+.form-row>.col{
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.col {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+
+.col-border {
+    margin: 5px;
+    padding: 5px !important;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.rightTable {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
