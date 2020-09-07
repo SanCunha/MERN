@@ -21,8 +21,8 @@ const App = () => {
                                         <Form.Label>Age:</Form.Label>
                                         <Form.Control type="text" placeholder="Enter Age" />
                                     </Form.Group>
-                                    <Form.Group as={Col} controlId="formGridBrave">
-                                        <Form.Label>Are you brave?</Form.Label>
+                                    <Form.Group as={Col} controlId="formGridBrabe">
+                                        <Form.Label>Are you brabe?</Form.Label>
                                         <Form.Control as="select">
                                             <option>Choice</option>
                                             <option>Yes</option>
@@ -153,12 +153,12 @@ const App = () => {
                                                 </div>                                                
                                             </div>
                                             <div>
-                                                <Form.Control type="text" placeholder="Empty for all" />
+                                                <Form.Control type="text" placeholder="Empty for all" style={{width: 70 + '%'}} />
                                             </div>
                                         </div>
                                     </Form.Group>
-                                    <Form.Group as={Col} controlId="formGridBrave" style={{paddingLeft: 5 + 'px !important'}}>
-                                        <Form.Label>Would you like a brave?</Form.Label>
+                                    <Form.Group as={Col} controlId="formGridBrabe" style={{paddingLeft: 5 + 'px !important'}}>
+                                        <Form.Label>Would you like a brabe?</Form.Label>
                                         <div className="itens-inline">
                                             <div>
                                                 <Form.Check type="radio" aria-label="radio 1" />
